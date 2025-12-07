@@ -28,6 +28,7 @@ Password: <Trenity>
 Authentication uses JWT tokens, which are stored in localStorage and attached to all protected /api/... routes.
 
 📊 Features
+
 ✅ 1. Login Page
 
 ✅ 2. Dashboard
