@@ -1,7 +1,7 @@
 import { getToken, clearToken } from "./auth";
 
 // DEV: talk directly to FastAPI on localhost:3000
-const API_BASE = "http://localhost:3000/api";
+const API_BASE = "/api";
 
 async function request(path, options = {}) {
   const headers = {
