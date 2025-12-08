@@ -1,47 +1,38 @@
-#Clean Energy Final Project — T65#
-
+Clean Energy Final Project — T65
 React + FastAPI + MySQL + JWT Authentication
 
-This project is a Single Page Application (SPA) created for my final assignment in ITSC 5166.
-It demonstrates frontend–backend decoupling, JWT-based authentication, protected routes, chart visualization, and MySQL integration.
+This project is a Single Page Application (SPA) created for my final assignment in ITSC 5166. It demonstrates frontend–backend decoupling, JWT-based authentication, protected routes, chart visualization, and MySQL integration.
 
-##🚀 Live Application URL##
+🚀 Live Application URL
 
 http://68.183.99.66/
 
-
-##📦 Repository Overview##
-
+📦 Repository Overview
 clean-energy-final/
 │
-├── backend/        # FastAPI backend (port 3000)
-├── frontend/       # React SPA (served on port 80 via NGINX)
+├── backend/      # FastAPI backend (port 3000)
+├── frontend/     # React SPA (served on port 80 via NGINX)
 └── README.md
 
-##🔐 Authentication##
+🔐 Authentication
 
-The login credentials are:
+Login Credentials:
 
-Username: <Trenity>
-Password: <Trenity>
+Username: Trenity
 
+Password: Trenity
 
-Authentication uses JWT tokens, which are stored in localStorage and attached to all protected /api/... routes.
+Authentication uses JWT tokens, stored in localStorage and automatically attached to all protected /api/... routes.
 
-##📊 Features##
+📊 Features
 
-✅ 1. Login Page
+✔ 1. Login Page
+✔ 2. Dashboard
+✔ 3. Summary Page
+✔ 4. Reports Page
+✔ 5. Protected Routes (JWT)
 
-✅ 2. Dashboard
-
-✅ 3. Summary Page
-
-✅ 4. Reports Page
-
-✅ 5. Protected Routes
-
-
-##🛠 Backend Technologies (FastAPI)##
+🛠 Backend Technologies — FastAPI
 
 Runs on port 3000
 
@@ -63,7 +54,7 @@ python-dotenv
 
 PyJWT
 
-##🎨 Frontend Technologies##
+🎨 Frontend Technologies — React
 
 Full SPA hosted on port 80
 
@@ -71,11 +62,15 @@ React Router for navigation
 
 ProtectedRoute wrapper for guarding pages
 
-Recharts for data visualization
+Recharts for visualization
 
-WCAG accessibility considerations (ARIA labels, semantic tags)
+WCAG accessibility considerations:
 
-##🗄 Database Structure (MySQL)##
+ARIA labels
+
+Semantic tags
+
+🗄 Database Structure (MySQL)
 
 Table: charts
 
@@ -83,15 +78,12 @@ id	slug	data (JSON)
 1	capacity_by_year	{"points": [...]}
 2	cost_projection	{"points": [...]}
 
-Charts are pulled dynamically based on slug.
+The frontend dynamically loads the correct chart based on URL slug.
 
-##🌐 Deployment Overview##
-
-The app is deployed on a Linux server using:
-
+🌐 Deployment Overview
 Frontend
 
-Built using npm run build
+Built using: npm run build
 
 Served via NGINX from /dist
 
@@ -99,35 +91,28 @@ Backend
 
 Runs as a systemd service
 
-Reverse-proxied to /api via NGINX
+Reverse-proxied through NGINX at /api
 
-Always running even after SSH disconnect
+Always running after SSH disconnect
 
-NGINX
+NGINX Routes
+/          → React frontend
+/api/...   → FastAPI backend (port 3000)
 
-Routes:
-
-/              → React build
-/api/...       → FastAPI backend on port 3000
-
-
-##📥 Installation Instructions (Local Development)##
-
-**Backend**:
-
+📥 Local Installation Instructions
+Backend
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python -m uvicorn main:app --reload --port 3000
 
-**Frontend**:
-
+Frontend
 cd frontend
 npm install
 npm run dev
 
-##✨ Credits##
+✨ Credits
 
 Developed by Trenity Gilford
-Clean Energy Article: [UtilityDive – Sodium-Ion Storage Advance](https://www.utilitydive.com/news/peak-energy-jupiter-sodium-ion-batteries/805784/)s
+Clean Energy Research Source: [UtilityDive – Sodium-Ion Storage Advances](https://www.utilitydive.com/news/peak-energy-jupiter-sodium-ion-batteries/805784/)
