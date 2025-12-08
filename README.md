@@ -1,23 +1,24 @@
-Clean Energy Final Project — T65
+#Clean Energy Final Project — T65#
 
 React + FastAPI + MySQL + JWT Authentication
 
 This project is a Single Page Application (SPA) created for my final assignment in ITSC 5166.
 It demonstrates frontend–backend decoupling, JWT-based authentication, protected routes, chart visualization, and MySQL integration.
 
-🚀 Live Application URL
+##🚀 Live Application URL##
 
-http://localhost:5173/
+http://68.183.99.66/
 
 
-📦 Repository Overview
+##📦 Repository Overview##
+
 clean-energy-final/
 │
 ├── backend/        # FastAPI backend (port 3000)
 ├── frontend/       # React SPA (served on port 80 via NGINX)
 └── README.md
 
-🔐 Authentication
+##🔐 Authentication##
 
 The login credentials are:
 
@@ -27,7 +28,7 @@ Password: <Trenity>
 
 Authentication uses JWT tokens, which are stored in localStorage and attached to all protected /api/... routes.
 
-📊 Features
+##📊 Features##
 
 ✅ 1. Login Page
 
@@ -40,7 +41,7 @@ Authentication uses JWT tokens, which are stored in localStorage and attached to
 ✅ 5. Protected Routes
 
 
-🛠 Backend Technologies (FastAPI)
+##🛠 Backend Technologies (FastAPI)##
 
 Runs on port 3000
 
@@ -62,7 +63,7 @@ python-dotenv
 
 PyJWT
 
-🎨 Frontend Technologies
+##🎨 Frontend Technologies##
 
 Full SPA hosted on port 80
 
@@ -74,7 +75,7 @@ Recharts for data visualization
 
 WCAG accessibility considerations (ARIA labels, semantic tags)
 
-🗄 Database Structure (MySQL)
+##🗄 Database Structure (MySQL)##
 
 Table: charts
 
@@ -84,7 +85,7 @@ id	slug	data (JSON)
 
 Charts are pulled dynamically based on slug.
 
-🌐 Deployment Overview
+##🌐 Deployment Overview##
 
 The app is deployed on a Linux server using:
 
@@ -110,21 +111,23 @@ Routes:
 /api/...       → FastAPI backend on port 3000
 
 
-📥 Installation Instructions (Local Development)
+##📥 Installation Instructions (Local Development)##
 
-Backend:
+**Backend**:
+
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python -m uvicorn main:app --reload --port 3000
 
-Frontend:
+**Frontend**:
+
 cd frontend
 npm install
 npm run dev
 
-✨ Credits
+##✨ Credits##
 
 Developed by Trenity Gilford
-Clean Energy Article: UtilityDive – Sodium-Ion Storage Advances
+Clean Energy Article: [UtilityDive – Sodium-Ion Storage Advance](https://www.utilitydive.com/news/peak-energy-jupiter-sodium-ion-batteries/805784/)s
