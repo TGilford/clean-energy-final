@@ -1,20 +1,21 @@
-Clean Energy Final Project — T65
+# Clean Energy Final Project — T65
 React + FastAPI + MySQL + JWT Authentication
 
 This project is a Single Page Application (SPA) created for my final assignment in ITSC 5166. It demonstrates frontend–backend decoupling, JWT-based authentication, protected routes, chart visualization, and MySQL integration.
 
-🚀 Live Application URL
+## 🚀 Live Application URL
 
 http://68.183.99.66/
 
-📦 Repository Overview
+## 📦 Repository Overview
+
 clean-energy-final/
 │
 ├── backend/      # FastAPI backend (port 3000)
 ├── frontend/     # React SPA (served on port 80 via NGINX)
 └── README.md
 
-🔐 Authentication
+## 🔐 Authentication
 
 Login Credentials:
 
@@ -24,7 +25,7 @@ Password: Trenity
 
 Authentication uses JWT tokens, stored in localStorage and automatically attached to all protected /api/... routes.
 
-📊 Features
+## 📊 Features
 
 ✔ 1. Login Page
 ✔ 2. Dashboard
@@ -32,7 +33,7 @@ Authentication uses JWT tokens, stored in localStorage and automatically attache
 ✔ 4. Reports Page
 ✔ 5. Protected Routes (JWT)
 
-🛠 Backend Technologies — FastAPI
+## 🛠 Backend Technologies — FastAPI
 
 Runs on port 3000
 
@@ -54,7 +55,7 @@ python-dotenv
 
 PyJWT
 
-🎨 Frontend Technologies — React
+## 🎨 Frontend Technologies — React
 
 Full SPA hosted on port 80
 
@@ -70,7 +71,7 @@ ARIA labels
 
 Semantic tags
 
-🗄 Database Structure (MySQL)
+## 🗄 Database Structure (MySQL)
 
 Table: charts
 
@@ -80,7 +81,7 @@ id	slug	data (JSON)
 
 The frontend dynamically loads the correct chart based on URL slug.
 
-🌐 Deployment Overview
+## 🌐 Deployment Overview
 Frontend
 
 Built using: npm run build
@@ -99,7 +100,7 @@ NGINX Routes
 /          → React frontend
 /api/...   → FastAPI backend (port 3000)
 
-📥 Local Installation Instructions
+## 📥 Local Installation Instructions
 Backend
 cd backend
 python3 -m venv venv
@@ -112,7 +113,7 @@ cd frontend
 npm install
 npm run dev
 
-✨ Credits
+### ✨ Credits
 
 Developed by Trenity Gilford
 Clean Energy Research Source: [UtilityDive – Sodium-Ion Storage Advances](https://www.utilitydive.com/news/peak-energy-jupiter-sodium-ion-batteries/805784/)
